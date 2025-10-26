@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "PixelBold";
+  src: url("assets/fonts/PublicPixel.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PixelRegular";
+  src: url("assets/fonts/Devil Children GBC English Patch Font.ttf") format("truetype");
+}
+
+@theme {
+  --color-darkx-500: #f0f0f0;
+  --color-darkx-600: #a9a9a9;
+  --color-darkx-700: #7d7d7d;
+  --color-darkx-800: #4b4b4b;
+  --color-darkx-900: #1c1c1c;
+
+  --color-main-500: #7923d5;
+  --color-main-600: #6f39aa;
+  --color-main-700: #7b00ff;
+  --color-main-800: #5f4080;
+  --color-main-900: #463955;
+
+  --font-questrial: 'Questrial', sans-serif;
+  --font-readex: "Readex Pro", sans-serif;
+  --font-pixelbold: 'PixelBold', sans-serif;
+  --font-pixelregular: 'PixelRegular', sans-serif;
+}

@@ -1,13 +1,13 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @font-face {
-  font-family: "PixelBold";
-  src: url("assets/fonts/PublicPixel.ttf") format("truetype");
+  font-family: 'PixelBold';
+  src: url('assets/fonts/PublicPixel.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "PixelRegular";
-  src: url("assets/fonts/Devil Children GBC English Patch Font.ttf") format("truetype");
+  font-family: 'PixelRegular';
+  src: url('assets/fonts/Devil Children GBC English Patch Font.ttf') format('truetype');
 }
 
 @theme {
@@ -24,7 +24,16 @@
   --color-main-900: #463955;
 
   --font-questrial: 'Questrial', sans-serif;
-  --font-readex: "Readex Pro", sans-serif;
+  --font-readex: 'Readex Pro', sans-serif;
   --font-pixelbold: 'PixelBold', sans-serif;
   --font-pixelregular: 'PixelRegular', sans-serif;
+
+  --animate-gradient: gradient 8s ease infinite;
 }
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+

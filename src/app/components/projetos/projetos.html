@@ -1,0 +1,63 @@
+<section class="px-8 py-8 sm:px-12 md:px-16">
+  <h1 class="font-readex font-bold text-3xl mb-6 text-center text-darkx-500 w-full">MEUS PROJETOS</h1>
+  <div class="flex flex-col gap-5 mb-6">
+    <a href="https://pab-connect.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <app-projetos-card imgSrc="assets/pabconnect-preview.jpeg" [moreSkills]="true" [isGroupProject]="true" title="PAB Connect" description="Plataforma que conecta meninas a oportunidades no futebol feminino, permitindo perfis, vídeos, interação com olheiros e gestão de peneiras e eventos." [badgesTemplate]="pabcBadges"/>
+    </a>
+    <a href="https://ogustavxs.github.io/CP5-Melodia-FrontEndDev/" target="_blank" rel="noopener noreferrer">
+      <app-projetos-card imgSrc="assets/melodia-preview.png" [moreSkills]="false" [isGroupProject]="true" title="Melodia" description="Landing page desenvolvida para o aplicativo de músicas Melodia, como parte de um projeto acadêmico. A página tem o objetivo de atrair jovens e amantes da música apresentando recursos do app." [badgesTemplate]="melodiaBadges"/>
+    </a>
+    <a href="https://github.com/ogustavxs" target="_blank" rel="noopener noreferrer">
+      <app-projetos-card imgSrc="assets/portfolio-preview.png" [moreSkills]="false" [isGroupProject]="false" title="Portfólio" description="Portfólio pessoal desenvolvido para apresentar meus projetos e habilidades como desenvolvedor. O site foi pensado para ter um design limpo e com personalidade, destacando meus projetos e minha criatividade." [badgesTemplate]="portfolioBadges"/>
+    </a>
+  </div>
+  <img class="w-[85%] mx-auto" src="assets/dino-banner.png" alt="Banner do t-rex game">
+</section>
+
+<ng-template #pabcBadges>
+  <app-projetos-badge badgeName="REACT" [badgeTemplate]="reactBadge" />
+  <app-projetos-badge badgeName="TAILWIND" [badgeTemplate]="tailwindBadge" />
+
+  <ng-template #reactBadge>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 fill-main-900" viewBox="0 0 24 24">
+      <path d="M12,10.11A1.87,1.87,0,1,1,10.13,12,1.88,1.88,0,0,1,12,10.11M7.37,20c.63.38,2-.2,3.6-1.7a24.22,24.22,0,0,1-1.51-1.9A22.7,22.7,0,0,1,7.06,16c-.51,2.14-.32,3.61.31,4m.71-5.74-.29-.51a7.91,7.91,0,0,0-.29.86c.27.06.57.11.88.16l-.3-.51m6.54-.76.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17,9,12.6,9,12,9s-1.17,0-1.71,0c-.29.47-.61.94-.91,1.47L8.57,12l.81,1.5c.3.53.62,1,.91,1.47.54,0,1.11,0,1.71,0s1.17,0,1.71,0c.29-.47.61-.94.91-1.47M12,6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0,10.44c.19-.22.39-.45.59-.72H11.41c.2.27.4.5.59.72M16.62,4c-.62-.38-2,.2-3.59,1.7a24.22,24.22,0,0,1,1.51,1.9,22.7,22.7,0,0,1,2.4.36c.51-2.14.32-3.61-.32-4m-.7,5.74.29.51a7.91,7.91,0,0,0,.29-.86c-.27-.06-.57-.11-.88-.16l.3.51m1.45-7c1.47.84,1.63,3.05,1,5.63,2.54.75,4.37,2,4.37,3.68s-1.83,2.93-4.37,3.68c.62,2.58.46,4.79-1,5.63s-3.45-.12-5.37-1.95c-1.92,1.83-3.91,2.79-5.38,1.95s-1.62-3-1-5.63c-2.54-.75-4.37-2-4.37-3.68S3.08,9.07,5.62,8.32c-.62-2.58-.46-4.79,1-5.63s3.46.12,5.38,1.95c1.92-1.83,3.91-2.79,5.37-1.95M17.08,12A22.51,22.51,0,0,1,18,14.26c2.1-.63,3.28-1.53,3.28-2.26S20.07,10.37,18,9.74A22.51,22.51,0,0,1,17.08,12M6.92,12A22.51,22.51,0,0,1,6,9.74c-2.1.63-3.28,1.53-3.28,2.26S3.93,13.63,6,14.26A22.51,22.51,0,0,1,6.92,12m9,2.26-.3.51c.31,0,.61-.1.88-.16a7.91,7.91,0,0,0-.29-.86l-.29.51M13,18.3c1.59,1.5,3,2.08,3.59,1.7s.83-1.82.32-4a22.7,22.7,0,0,1-2.4.36A24.22,24.22,0,0,1,13,18.3M8.08,9.74l.3-.51c-.31,0-.61.1-.88.16a7.91,7.91,0,0,0,.29.86l.29-.51M11,5.7C9.38,4.2,8,3.62,7.37,4s-.82,1.82-.31,4a22.7,22.7,0,0,1,2.4-.36A24.22,24.22,0,0,1,11,5.7Z"/>
+    </svg>
+  </ng-template>
+  <ng-template #tailwindBadge>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 fill-main-900" viewBox="0 0 32 32">
+      <path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"/>
+    </svg>
+  </ng-template>
+</ng-template>
+
+<ng-template #melodiaBadges>
+  <app-projetos-badge badgeName="HTML" [badgeTemplate]="htmlBadge" />
+  <app-projetos-badge badgeName="TAILWIND" [badgeTemplate]="tailwindBadge" />
+
+  <ng-template #htmlBadge>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 fill-main-900" viewBox="0 0 50 50">
+      <path d="M 45.273438 2.324219 C 45.085938 2.117188 44.816406 2 44.535156 2 L 5.464844 2 C 5.183594 2 4.914063 2.117188 4.726563 2.324219 C 4.535156 2.53125 4.441406 2.808594 4.46875 3.089844 L 7.988281 42.515625 C 8.023438 42.929688 8.3125 43.273438 8.710938 43.390625 L 24.722656 47.960938 C 24.808594 47.988281 24.902344 48 24.996094 48 C 25.089844 48 25.179688 47.988281 25.269531 47.960938 L 41.292969 43.390625 C 41.691406 43.273438 41.976563 42.929688 42.015625 42.515625 L 45.53125 3.089844 C 45.558594 2.808594 45.464844 2.53125 45.273438 2.324219 Z M 36.847656 15.917969 L 18.035156 15.917969 L 18.484375 21.007813 L 36.394531 21.007813 L 35.050781 36.050781 L 24.992188 39.089844 L 24.894531 39.058594 L 14.953125 36.046875 L 14.410156 29.917969 L 19.28125 29.917969 L 19.492188 32.296875 L 25.050781 33.460938 L 30.507813 32.296875 L 31.089844 25.859375 L 14.046875 25.859375 L 12.722656 11.054688 L 37.28125 11.054688 Z"></path>
+    </svg>
+  </ng-template>
+  <ng-template #tailwindBadge>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 fill-main-900" viewBox="0 0 32 32">
+      <path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"/>
+    </svg>
+  </ng-template>
+</ng-template>
+
+<ng-template #portfolioBadges>
+  <app-projetos-badge badgeName="ANGULAR" [badgeTemplate]="angularBadge" />
+  <app-projetos-badge badgeName="TAILWIND" [badgeTemplate]="tailwindBadge" />
+
+  <ng-template #angularBadge>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 fill-main-900" viewBox="0 0 24 24">
+      <path d="M12,2.5l8.84,3.15L19.5,17.35,12,21.5,4.5,17.35,3.16,5.65,12,2.5m0,2.1L6.47,17H8.53l1.11-2.78h4.7L15.45,17H17.5L12,4.6m1.62,7.9H10.39L12,8.63Z"/>
+    </svg>
+  </ng-template>
+  <ng-template #tailwindBadge>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-6 md:h-6 fill-main-900" viewBox="0 0 32 32">
+      <path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"/>
+    </svg>
+  </ng-template>
+</ng-template>

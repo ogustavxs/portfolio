@@ -1,6 +1,6 @@
-<section class="px-8 py-8 sm:px-12 md:px-16">
+<section class="px-8 py-8 sm:px-12 md:px-16 flex flex-col justify-center items-center">
   <h1 class="font-readex font-bold text-3xl mb-6 text-center text-darkx-500 w-full">MEUS PROJETOS</h1>
-  <div class="flex flex-col gap-5 mb-6">
+  <div class="flex flex-col gap-5 md:flex-row md:flex-wrap sm:gap-7 mb-6 justify-center items-center">
     <a href="https://pab-connect.vercel.app/" target="_blank" rel="noopener noreferrer">
       <app-projetos-card imgSrc="assets/pabconnect-preview.jpeg" [moreSkills]="true" [isGroupProject]="true" title="PAB Connect" description="Plataforma que conecta meninas a oportunidades no futebol feminino, permitindo perfis, vídeos, interação com olheiros e gestão de peneiras e eventos." [badgesTemplate]="pabcBadges"/>
     </a>
@@ -8,10 +8,10 @@
       <app-projetos-card imgSrc="assets/melodia-preview.png" [moreSkills]="false" [isGroupProject]="true" title="Melodia" description="Landing page desenvolvida para o aplicativo de músicas Melodia, como parte de um projeto acadêmico. A página tem o objetivo de atrair jovens e amantes da música apresentando recursos do app." [badgesTemplate]="melodiaBadges"/>
     </a>
     <a href="https://github.com/ogustavxs" target="_blank" rel="noopener noreferrer">
-      <app-projetos-card imgSrc="assets/portfolio-preview.png" [moreSkills]="false" [isGroupProject]="false" title="Portfólio" description="Portfólio pessoal desenvolvido para apresentar meus projetos e habilidades como desenvolvedor. O site foi pensado para ter um design limpo e com personalidade, destacando meus projetos e minha criatividade." [badgesTemplate]="portfolioBadges"/>
+      <app-projetos-card imgSrc="assets/portfolio-preview.png" [moreSkills]="false" [isGroupProject]="false" title="Portfólio" description="Portfólio pessoal desenvolvido para apresentar meus projetos e habilidades como desenvolvedor. O site foi pensado para ter um design limpo e com personalidade, destacando ..." [badgesTemplate]="portfolioBadges"/>
     </a>
   </div>
-  <img class="w-[85%] mx-auto" src="assets/dino-banner.png" alt="Banner do t-rex game">
+  <img class="w-[85%] sm:w-[80%] md:w-100 mx-auto" src="assets/dino-banner.png" alt="Banner do t-rex game">
 </section>
 
 <ng-template #pabcBadges>

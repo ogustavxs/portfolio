@@ -10,5 +10,5 @@ import { TemplateRef } from '@angular/core';
 })
 export class SkillsItem {
   @Input() iconTemplate!: TemplateRef<any>;
-  @Input() title!: string;
+  @Input() titleItem!: string;
 }

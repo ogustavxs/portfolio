@@ -36,3 +36,8 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+.animate-gradient-bg {
+  background: linear-gradient(270deg, var(--color-main-900), var(--color-main-800), var(--color-main-600), var(--color-main-800), var(--color-main-900));
+  background-size: 1000% 1000%;
+}

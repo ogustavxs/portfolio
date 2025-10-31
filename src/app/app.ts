@@ -3,10 +3,11 @@ import { Header } from "./components/header/header";
 import { Hero } from "./components/hero/hero";
 import { Skills } from "./components/skills/skills";
 import { Projetos } from "./components/projetos/projetos";
+import { Jornada } from "./components/jornada/jornada";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Hero, Skills, Projetos],
+  imports: [Header, Hero, Skills, Projetos, Jornada],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

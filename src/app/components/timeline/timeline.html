@@ -1,0 +1,18 @@
+<div class="text-white pl-3 md:p-0">
+  <div class="relative border-l-4 border-purple-600 pl-6 space-y-10">
+    <div *ngFor="let item of timeline" class="relative">
+      <div
+        class="absolute -left-[38px] top-0 w-6 h-6 bg-gray-200 "
+      ></div>
+
+      <div>
+        <h3 class="font-pixelbold text-sm sm:text-base md:text-sm uppercase ">{{ item.title }}</h3>
+        <p class="text-xs sm:text-sm md:text-xs font-pixelbold text-gray-400">
+          {{ item.start }} — {{ item.end }}
+          <span *ngIf="item.status" class="text-gray-500 text-xs">({{ item.status }})</span>
+        </p>
+        <p class="mt-2 text-gray-300 font-questrial leading-relaxed sm:text-lg md:text-base">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,6 @@
-<app-header />
+<app-header (clickSidebar)="toggleSidebar()" />
+<div class="w-full h-22"></div>
+<app-sidebar [isActive]="isActive" (clicked)="closeSidebar()" />
 <app-hero />
 <app-skills />
 <app-projetos />

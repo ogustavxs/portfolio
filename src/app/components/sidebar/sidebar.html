@@ -1,0 +1,66 @@
+@if (isActive) {
+<div
+  (click)="closeSidebar()"
+  class="fixed w-screen h-screen backdrop-filter backdrop-blur-xs z-40 bg-darkx-900/50"
+></div>
+
+<div class="fixed transition-all top-22 right-0 z-40 h-[calc(100svh-5rem)] w-50 bg-transparent">
+  <ul
+    class="w-full h-full text-darkx-500 flex flex-col font-questrial font-semibold text-2xl justify-center items-center gap-6 pb-10"
+  >
+    <a
+      href="#inicio"
+      (click)="closeSidebar()"
+      [class.bg-main-700!]="currentSection == 'inicio'"
+      class="bg-main-800/60 shadow-md cursor-pointer backdrop-filter backdrop-blur-md p-1 px-4"
+    >
+      <li>Início</li>
+    </a>
+
+    <a
+      href="#skills"
+      (click)="closeSidebar()"
+      [class.bg-main-700!]="currentSection == 'skills'"
+      class="bg-main-800/60 shadow-md cursor-pointer backdrop-filter backdrop-blur-md p-1 px-4"
+    >
+      <li>Skills</li>
+    </a>
+
+    <a
+      href="#projetos"
+      (click)="closeSidebar()"
+      [class.bg-main-700!]="currentSection == 'projetos'"
+      class="bg-main-800/60 shadow-md cursor-pointer backdrop-filter backdrop-blur-md p-1 px-4"
+    >
+      <li>Projetos</li>
+    </a>
+
+    <a
+      href="#jornada"
+      (click)="closeSidebar()"
+      [class.bg-main-700!]="currentSection == 'jornada'"
+      class="bg-main-800/60 shadow-md cursor-pointer backdrop-filter backdrop-blur-md p-1 px-4"
+    >
+      <li>Jornada</li>
+    </a>
+
+    <a
+      href="#contato-sm"
+      (click)="closeSidebar()"
+      [class.bg-main-700!]="currentSection == 'contato-sm'"
+      class="bg-main-800/60 md:hidden shadow-md cursor-pointer backdrop-filter backdrop-blur-md p-1 px-4"
+    >
+      <li>Contato</li>
+    </a>
+
+    <a
+      href="#contato-md"
+      (click)="closeSidebar()"
+      [class.bg-main-700!]="currentSection == 'contato-md'"
+      class="bg-main-800/60 hidden md:block shadow-md cursor-pointer backdrop-filter backdrop-blur-md p-1 px-4"
+    >
+      <li>Contato</li>
+    </a>
+  </ul>
+</div>
+}
